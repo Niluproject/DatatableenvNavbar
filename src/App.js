@@ -9,6 +9,7 @@ import Shouldupdate from './components/Shouldupdate';
 import Databledemo from './components/Databledemo';
 import Tabledata from './components/Tabledata';
 import Test from './components/Test';
+import Chart from './components/Chart';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/datatable" element={<Databledemo />} />
+        {/* <li><NavLink className='nvlink' to="/tabledata">Tabledata</NavLink></li> */}
         <Route path="/tabledata" element={<Tabledata />} />
+        <Route path="/chart" element={<Chart />} />
         <Route path="/about" element={<About name = "Nilesh" />} />
         <Route path="/user/:name" element={<Users />} />
       </Routes>
